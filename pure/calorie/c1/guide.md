@@ -1,6 +1,4 @@
 [TOC]
-# b
-## 系统
 
 # 初识区块链
 
@@ -152,7 +150,7 @@ while(!isValidHashDifficulty(hash, difficulty)) {
 ### 比特币交易 
 
 * 所谓比特币交易就是从一个比特币钱包向另一个中转.每笔交易都有数字签名来保 证安全.交易生效那么就对多有人都公开. 
-* 钱包下载与使用:[https://bitcoin.org/zh_CN/download](https://bitcoin.org/zh_CN/download)
+[//]: # (This may be the most platform independent comment 钱包下载与使用:[https://bitcoin.org/zh_CN/download](https://bitcoin.org/zh_CN/download) )
 
 ### 产量减半
 
@@ -197,7 +195,8 @@ Merkle树被应用在了交易的存储上。每笔交易都会生成一个hash�
 #### 软分叉&硬分叉
    * 如果你遇到一个硬分叉,它意味着某种数字货币——比如比特币——的新版本软件 和旧版本无法兼容,彼此看不顺眼,必须各走各路.而软分叉则不同,新版本要求更为 严苛，不同意旧版本的一些规则;但旧版本比较憨厚，还能接受新版本软件. 
 
-
+## 应用场景
+###### 业界项目结构关系图
 ```mermaid
 
 graph TD

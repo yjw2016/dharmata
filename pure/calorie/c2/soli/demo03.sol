@@ -1,5 +1,5 @@
 pragma solidity ^0.4.25;
-
+// 接口与实现， 抽象合约(类）与继承
 interface Wifi{ //定义接口，函数只有声明，没有实现
 
     function wifi() public returns(string);
@@ -35,6 +35,10 @@ contract Mi is Phone,Wifi{
     function alarm() internal returns(string){
         return "小米实现闹钟";
     }
+
+    function show() returns(string,string){
+        return(wifi(),alarm());
+    }
 }
 
 // iPhone，实现全部功能
@@ -47,6 +51,9 @@ contract iPhone is Phone,Wifi{
     }
     function blueTooth() public returns(string){
         return "iPhone实现蓝牙";
+    }
+    function show() returns(string,string) {
+        return (start(),close());
     }
 }
 

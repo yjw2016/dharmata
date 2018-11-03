@@ -5,6 +5,6 @@ contract IntDemo{
         int8 num = 127; //8位，最高位符号位
         uint8 num2 = 255; //1个字节8位， 0~255
         var num3 = num; //与JS相同变量类型取决赋值的数据类型，初始化之后类型不能改变
-        return(num,num3,num3)
+        return(num,num3,num3);
     }
 }
